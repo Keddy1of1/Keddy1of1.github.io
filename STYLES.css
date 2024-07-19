@@ -1,0 +1,196 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+.hero {
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    text-align: center;
+}
+
+.hero p {
+    font-size: 16px; /* Increased font size for better readability */
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px; /* Increased font size for section headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    text-align: center;
+}
+
+.content p {
+    font-size: 16px; /* Increased font size for paragraph text */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.services, .portfolio, .faq, .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service, .portfolio-item, .faq-item, .blog-post {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(45% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.service:hover, .portfolio-item:hover, .faq-item:hover, .blog-post:hover {
+    transform: translateY(-10px);
+}
+
+.service h3, .portfolio-item h3, .faq-item h3, .blog-post h3 {
+    font-size: 18px; /* Increased font size for item titles */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    text-align: left;
+}
+
+.service p, .portfolio-item p, .faq-item p, .blog-post p {
+    font-size: 14px; /* Increased font size for item descriptions */
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 14px;
+    text-align: left;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 14px; /* Increased font size for form inputs */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px; /* Increased font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e03570;
+}
+
+.read-more {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #e03570;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
